@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    display: flex;
+    background-color: gray;
+    height: 100vh;
+}
+
+.left {
+    background-color: blue;
+    height: 100%;
+    width: 45%;
+
+}
+
+.right {
+    background-color: red;
+    width: 75%;
+}
