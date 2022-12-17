@@ -1,6 +1,11 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+/*font-family: 'Norse', bold;*/
 html, body {
     height: 100%;
     margin: 0;
+    background-image:"..imgs/halie-west-25xggax4bSA-unsplash.jpg";
+
 }
 .container {
     display: flex;
@@ -8,14 +13,63 @@ html, body {
     height: 100vh;
 }
 
-.left {
-    background-color: blue;
+.sidebar {
+    background-image: url("imgs/halie-west-25xggax4bSA-unsplash.jpg");
     height: 100%;
     width: 45%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 
+}
+.sidebar .logo {
+    
+    position: relative;
+    top: 25%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.182);
+    text-align: center;
+    height: 20%;
+    
+}
+.sidebar .footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.142);
+    top: 75%;
+    text-align: center;
 }
 
 .right {
     background-color: red;
     width: 75%;
+    
+}
+
+.right .top-right{
+    color: blue;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 33.33%;
+}
+.right .sign-up {
+    color: pink;
+    background-color: white;
+    height: 33.33%;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.odintxt {
+    font-family: 'Norse', bold;
+    display: flex;
+    color: white;
+    font-size: 64px;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
