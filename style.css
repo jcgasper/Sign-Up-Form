@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/norse');
-
+* {
+    font-family:  'Poppins',sans-serif;
+}
 /*font-family: 'Norse', bold;*/
 html, body {
     height: 100%;
@@ -9,7 +11,6 @@ html, body {
 }
 .container {
     display: flex;
-    background-color: gray;
     height: 100vh;
 }
 
@@ -38,24 +39,71 @@ html, body {
     background-color: rgba(0, 0, 0, 0.142);
     top: 75%;
     text-align: center;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+a:hover {
+    color: purple;
 }
 
 .right {
-    background-color: red;
-    width: 75%;
     
+    width: 75%;
+    display: flex;
+    flex-direction: column;
 }
 
 .right .top-right{
-    color: blue;
+   
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(244, 240, 240);
     height: 33.33%;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right .top-right p {
+    margin: 50px;
+    font-size: 1.25em;
+    padding-top: 2em;
+    word-wrap: break-word;
+    
 }
 .right .sign-up {
-    color: pink;
+    color: black;
     background-color: white;
     height: 33.33%;
+    
+}
+.right .bottom {
+    height: 33.33%;
+    background-color: rgb(244, 240, 240);
+    
+
+}
+.button-container {
+    width: 100%;
+    height: 100%;
+    margin: 25px;
+    
+}
+.right .bottom button {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    width: 40%;
+    height: 15%;
+    font-size: 1.15em;
+    
+    
+}
+.bottom a {
+    color: green;
+    text-decoration: none
 }
 img {
     max-width: 100%;
@@ -72,4 +120,30 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.sign-up form {
+    display: flex;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+
+.input-container {
+    display: flex;
+
+}
+.input-container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 210px;
+    
+
+}
+
+.sign-up h3 {
+    margin: 15px;
+    font-weight: lighter;
 }
